@@ -1,1 +1,33 @@
+import pandas as pd
+
+data = {
+    "review": [
+        "This product is amazing, I loved it!",
+        "Terrible experience, I want a refund.",
+        "Not good, but not bad. It's ok.",
+        "I absolutely recommend this item.",
+        "Worst purchase of my life.",
+        "Works great, arrived fast.",
+        "The quality is mediocre.",
+        "I will never buy this again.",
+        "Very satisfied with my purchase!",
+        "Disappointing and low quality."
+    ],
+    "label": [
+        "positive",
+        "negative",
+        "neutral",
+        "positive",
+        "negative",
+        "positive",
+        "neutral",
+        "negative",
+        "positive",
+        "negative"
+    ]
+}
+
+df = pd.DataFrame(data)
+df.to_csv("data/raw/reviews.csv", index=False)
+df
 
