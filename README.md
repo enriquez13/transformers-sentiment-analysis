@@ -15,7 +15,8 @@ Prediction on new text
 
 All steps are implemented in Jupyter Notebooks for clarity and reproducibility.
 
-📂 Project Structure
+# 📂 Project Structure
+```bash
 transformers-sentiment-analysis/
 │
 ├── data/
@@ -43,9 +44,9 @@ transformers-sentiment-analysis/
 │
 ├── tokens.pt
 ├── README.md
-└──requirements.txt
+```└──requirements.txt
 
-🛠️ Requirements
+##🛠️ Requirements
 
 Install dependencies:
 
@@ -53,7 +54,7 @@ Or manually install:
 pip install transformers datasets torch pandas numpy jupyter
 
 
-📓 Notebook Workflow
+##📓 Notebook Workflow
 1. 01_load_and_clean.ipynb
 
 Loads the raw CSV (data/raw/reviews.csv)
@@ -107,7 +108,7 @@ Outputs softmax probabilities for:
 ✔ neutral
 ✔ positive
 
-🧠 Example Predictions:
+##🧠 Example Predictions:
 
 Input: "This product is terrible and I hate it."
 Output: negative (0.99)
@@ -143,10 +144,11 @@ classifier = pipeline(
 text = "This product is terrible."
 print(classifier(text))
 
-📝 Notes
+## 📝 Notes
 The model is fully portable and can be loaded in Python scripts, notebooks, or web backends.
 
 Checkpoints inside models/distilbert-sentiment/ can be deleted if not needed.
 
 Training was optimized for CPU-only use.
+
 
