@@ -1,6 +1,6 @@
-📘 README.md – Transformers Sentiment Analysis
+# 📘 README.md – Transformers Sentiment Analysis
 
-🧠 Project: Sentiment Analysis with DistilBERT
+## 🧠 Project: Sentiment Analysis with DistilBERT
 
 This project implements an end-to-end sentiment analysis pipeline using HuggingFace Transformers.
 It includes four stages:
@@ -47,7 +47,7 @@ transformers-sentiment-analysis/
 └──requirements.txt
 ```
 
-##🛠️ Requirements
+## 🛠️ Requirements
 
 Install dependencies:
 
@@ -55,8 +55,8 @@ Or manually install:
 pip install transformers datasets torch pandas numpy jupyter
 
 
-##📓 Notebook Workflow
-1. 01_load_and_clean.ipynb
+## 📓 Notebook Workflow
+**1. 01_load_and_clean.ipynb**
 
 Loads the raw CSV (data/raw/reviews.csv)
 
@@ -65,7 +65,7 @@ Normalizes text (lowercase, remove symbols, clean whitespace)
 Saves cleaned dataset to:
 ✔ data/processed/clean_reviews_v2.csv
 
-2. 02_tokenization.ipynb
+**2. 02_tokenization.ipynb**
 
 Loads cleaned dataset
 
@@ -76,7 +76,7 @@ Tokenizes all reviews
 Saves tokenized tensors to:
 ✔ tokens.pt
 
-3. 03_train_model.ipynb
+**3. 03_train_model.ipynb**
 
 Maps labels → integers (negative=0, neutral=1, positive=2)
 
@@ -98,7 +98,7 @@ The training results achieved:
 
 Excellent model performance.
 
-4. 04_predict.ipynb
+**4. 04_predict.ipynb**
 
 Loads trained model
 
@@ -109,7 +109,7 @@ Outputs softmax probabilities for:
 ✔ neutral
 ✔ positive
 
-##🧠 Example Predictions:
+## 🧠 Example Predictions:
 
 Input: "This product is terrible and I hate it."
 Output: negative (0.99)
@@ -126,7 +126,7 @@ Output: negative (0.98)
 Input: "It works as expected."
 Output: positive (0.77)
 
-🧪 How to Use the Trained Model in Any Script
+**🧪 How to Use the Trained Model in Any Script**
 import torch
 from transformers import DistilBertForSequenceClassification, DistilBertTokenizerFast, pipeline
 
@@ -151,6 +151,7 @@ The model is fully portable and can be loaded in Python scripts, notebooks, or w
 Checkpoints inside models/distilbert-sentiment/ can be deleted if not needed.
 
 Training was optimized for CPU-only use.
+
 
 
 
