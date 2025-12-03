@@ -14,9 +14,6 @@ env/
 models/
 !models/.gitkeep  # opcional si quieres dejar la carpeta vacía
 
-# Data files (raw and processed)
-data/raw/
-data/processed/
 
 # Large files
 *.bin
