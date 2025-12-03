@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# HuggingFace models
+models/
+!models/.gitkeep  # opcional si quieres dejar la carpeta vacía
+
+# Data files (raw and processed)
+data/raw/
+data/processed/
+
+# Large files
+*.bin
+*.pt
+*.h5
+*.safetensors
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
