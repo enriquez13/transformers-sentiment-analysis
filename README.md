@@ -56,7 +56,7 @@ pip install transformers datasets torch pandas numpy jupyter
 
 
 ## 📓 Notebook Workflow
-**1. 01_load_and_clean.ipynb**
+**01_load_and_clean.ipynb**
 
 Loads the raw CSV (data/raw/reviews.csv)
 
@@ -65,7 +65,7 @@ Normalizes text (lowercase, remove symbols, clean whitespace)
 Saves cleaned dataset to:
 ✔ data/processed/clean_reviews_v2.csv
 
-**2. 02_tokenization.ipynb**
+**02_tokenization.ipynb**
 
 Loads cleaned dataset
 
@@ -74,9 +74,9 @@ Loads the tokenizer (distilbert-base-uncased)
 Tokenizes all reviews
 
 Saves tokenized tensors to:
-✔ tokens.pt
+tokens.pt
 
-**3. 03_train_model.ipynb**
+**03_train_model.ipynb**
 
 Maps labels → integers (negative=0, neutral=1, positive=2)
 
@@ -87,7 +87,7 @@ Tokenizes dynamically during training
 Trains DistilBERT for sequence classification
 
 Saves trained model to:
-✔ models/distilbert-sentiment/
+models/distilbert-sentiment/
 
 The training results achieved:
 | Epoch | Train Loss | Val Loss |
@@ -98,16 +98,16 @@ The training results achieved:
 
 Excellent model performance.
 
-**4. 04_predict.ipynb**
+**04_predict.ipynb**
 
-Loads trained model
+- Loads trained model
 
-Performs sentiment inference on new text
+- Performs sentiment inference on new text
 
 Outputs softmax probabilities for:
-✔ negative/
-✔ neutral/
-✔ positive
+- negative
+- neutral
+- positive
 
 ## 🧠 Example Predictions:
 
@@ -151,6 +151,7 @@ The model is fully portable and can be loaded in Python scripts, notebooks, or w
 Checkpoints inside models/distilbert-sentiment/ can be deleted if not needed.
 
 Training was optimized for CPU-only use.
+
 
 
 
