@@ -2,18 +2,19 @@
 
 ## 🧠 Project: Sentiment Analysis with DistilBERT
 
-This project implements an end-to-end sentiment analysis pipeline using HuggingFace Transformers.
-It includes four stages:
+In a world where customer opinions on social media, reviews, and support are a goldmine of insights, this project provides a practical solution to automatically classify this feedback into actionable sentiment data (positive, negative, neutral).
 
-Dataset cleaning
+By implementing an end-to-end sentiment analysis pipeline using HuggingFace Transformers, it translates raw text into clear business intelligence. The project covers the four key stages:
 
-Tokenization
+- Dataset cleaning and preparation
 
-Model training (DistilBERT)
+- Text tokenization and preprocessing
 
-Prediction on new text
+- Model training and fine-tuning (using the efficient DistilBERT architecture)
 
-All steps are implemented in Jupyter Notebooks for clarity and reproducibility.
+- Production-ready prediction on new text
+
+All steps are developed in Jupyter Notebooks for clarity, transparency, and full reproducibility.
 
 # 📂 Project Structure
 ```bash
@@ -151,6 +152,7 @@ The model is fully portable and can be loaded in Python scripts, notebooks, or w
 Checkpoints inside models/distilbert-sentiment/ can be deleted if not needed.
 
 Training was optimized for CPU-only use.
+
 
 
 
