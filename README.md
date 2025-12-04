@@ -34,7 +34,7 @@ transformers-sentiment-analysis/
 │       ├── tokenizer_config.json
 │       ├── special_tokens_map.json
 │       ├── training_args.bin
-│       └── checkpoint-*/  (auto-generated)
+│       └── checkpoint  (auto-generated)
 │
 ├── notebooks/
 │   ├── 01_load_and_clean.ipynb
@@ -105,28 +105,28 @@ Loads trained model
 Performs sentiment inference on new text
 
 Outputs softmax probabilities for:
-✔ negative
-✔ neutral
+✔ negative/
+✔ neutral/
 ✔ positive
 
 ## 🧠 Example Predictions:
 
-Input: "This product is terrible and I hate it."
-Output: negative (0.99)
+**Input:** "This product is terrible and I hate it."
+**Output:** negative (0.99)
 
-Input: "It's okay, nothing special."
-Output: neutral (0.78)
+**Input:** "It's okay, nothing special."
+**Output:** neutral (0.78)
 
-Input: "I love it!"
-Output: positive (0.98)
+**Input:** "I love it!"
+**Output:** positive (0.98)
 
-Input: "This is the worst thing I've ever bought."
-Output: negative (0.98)
+**Input:** "This is the worst thing I've ever bought."
+**Output:** negative (0.98)
 
-Input: "It works as expected."
-Output: positive (0.77)
+**Input:** "It works as expected."
+**Output:** positive (0.77)
 
-**🧪 How to Use the Trained Model in Any Script**
+## 🧪 How to Use the Trained Model in Any Script
 import torch
 from transformers import DistilBertForSequenceClassification, DistilBertTokenizerFast, pipeline
 
@@ -151,6 +151,7 @@ The model is fully portable and can be loaded in Python scripts, notebooks, or w
 Checkpoints inside models/distilbert-sentiment/ can be deleted if not needed.
 
 Training was optimized for CPU-only use.
+
 
 
 
