@@ -1,4 +1,5 @@
 # 📘 README.md – Transformers Sentiment Analysis
+Fine-tuned DistilBERT model for sentiment classification achieving **92% accuracy**.
 
 ## 🧠 Project: Sentiment Analysis with DistilBERT
 
@@ -152,6 +153,7 @@ The model is fully portable and can be loaded in Python scripts, notebooks, or w
 Checkpoints inside models/distilbert-sentiment/ can be deleted if not needed.
 
 Training was optimized for CPU-only use.
+
 
 
 
